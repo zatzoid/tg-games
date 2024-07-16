@@ -1,1 +1,0 @@
-import{j as i,N as a}from"./index-BcwbjUl7.js";const e="_main_55syp_1",t={main:e};function c(n){return typeof n.action=="string"?i.jsx(a,{to:n.action,className:t.main,children:n.children}):i.jsx("button",{onClick:n.action,disabled:n.dissabled,className:t.main,type:n.type,children:n.children})}export{c as L};
