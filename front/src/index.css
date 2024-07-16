@@ -1,0 +1,72 @@
+@import 'normalize.css';
+
+
+body {
+    --col-main: rgb(18, 196, 121);
+    --col-main-dark: rgb(14, 139, 87);
+    --col-main-light: rgb(23, 219, 137);
+    --col-black: rgb(14, 14, 14);
+    --col-black-light: rgb(47, 48, 48);
+    --col-black-lighter: rgb(100, 100, 100);
+    --col-black-dark: black;
+    --col-red: red;
+    --col-red-dark: rgb(160, 38, 38);
+    --col-yellow: yellow;
+    --col-green: green;
+    --col-white: white;
+    --max-width: 800px;
+    background-color: var(--col-black-light);
+    font-family: sans-serif;
+    color: var(--col-white);
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+    margin: 0;
+    text-decoration: none;
+    color: white;
+}
+
+#root {
+    max-width: var(--max-width);
+    margin: auto;
+    box-sizing: border-box;
+    padding: 5px;
+
+}
+
+.main-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin: 15px 0;
+}
+.main-container{
+    background-color: var(--col-black);
+    border-radius: 20px;
+    padding: 10px;
+    margin: 15px 0;
+    box-sizing: border-box;
+}
+.main-context{
+    color: var(--col-black-lighter);
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.green {
+    color: var(--col-main-dark) !important;
+}
+.red{
+    color: var(--col-red-dark);
+}

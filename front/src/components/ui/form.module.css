@@ -1,0 +1,43 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 400px;
+    margin: auto;
+    padding: 15px;
+    box-sizing: border-box;
+    background-color: var(--col-black-light);
+    border-radius: 20px;
+
+}
+
+.form input {
+    padding: 5px 15px;
+    border-radius: 20px;
+    background-color: var(--col-black);
+    color: white;
+    border: none;
+    box-sizing: border-box;
+
+}
+.inputNum{
+    width: 55px;
+}
+
+.form label {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    text-wrap: nowrap;
+}
+
+.form select{
+    background-color: var(--col-black);
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    border: none;
+}
+.form button{
+    margin: auto;
+}

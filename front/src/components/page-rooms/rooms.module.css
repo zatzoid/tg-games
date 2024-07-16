@@ -1,0 +1,20 @@
+
+.roomList{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.roomList li{
+    padding: 10px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background-color: var(--col-black);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.roomList li a{
+    height: fit-content;
+}

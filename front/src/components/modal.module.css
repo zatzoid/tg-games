@@ -1,0 +1,14 @@
+.content{
+    margin: auto;
+    width: fit-content;
+    
+
+}
+.content input{
+    padding: 10px 15px;
+    border-radius: 20px;
+    background-color: var(--col-black);
+    color: white;
+    border: none;
+    box-sizing: border-box;
+}
