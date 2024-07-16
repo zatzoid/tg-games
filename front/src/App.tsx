@@ -23,8 +23,11 @@ function App() {
   useEffect(() => {
 
     if (window.Telegram.WebApp?.initDataUnsafe?.user?.id) {
-      setUserData({ name: window.Telegram.WebApp.initDataUnsafe.user.first_name, avatar: (window.Telegram.WebApp.initDataUnsafe.user.photo_url as string), id: window.Telegram.WebApp.initDataUnsafe.user.id.toString() })
+      console.log('user::',window.Telegram.WebApp.initDataUnsafe.user);
+      setUserData({ name: window.Telegram.WebApp.initDataUnsafe.user.first_name, avatar: (window.Telegram.WebApp.initDataUnsafe?.user?.photo_url as string) || '', id: window.Telegram.WebApp.initDataUnsafe.user.id.toString() })
       setIsTelegram(true)
+    }else{
+      setIsTelegram(false)
     }
   }, [])
 
